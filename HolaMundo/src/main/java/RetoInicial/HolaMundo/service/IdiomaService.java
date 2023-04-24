@@ -1,27 +1,28 @@
 package RetoInicial.HolaMundo.service;
 
 import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import RetoInicial.HolaMundo.Entity.Idioma;
 import RetoInicial.HolaMundo.Exception.IdiomaNotFoundException;
+import RetoInicial.HolaMundo.Idioma.Idioma;
 import RetoInicial.HolaMundo.Repo.IdiomaRepository;
 
 @Service
-public class HolaMundoService {
+public class IdiomaService {
 
     private IdiomaRepository idiomaRepository;
 
-    public HolaMundoService(IdiomaRepository idiomaRepository) {
+    public IdiomaService(IdiomaRepository idiomaRepository) {
         this.idiomaRepository = idiomaRepository;
     }
 
     public String getSaludo(String codigoIdioma) {
         Optional<Idioma> optionalIdioma = idiomaRepository.findByCodigo(codigoIdioma);
         if (optionalIdioma.isPresent()) {
-            return optionalIdioma.get().getSaludo();
+        	return optionalIdioma.get().getSaludo();
         } else {
             throw new IdiomaNotFoundException("Idioma no encontrado: " + codigoIdioma);
         }

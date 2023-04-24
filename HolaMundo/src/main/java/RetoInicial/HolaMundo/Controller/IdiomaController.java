@@ -1,7 +1,6 @@
 package RetoInicial.HolaMundo.Controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,16 +10,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import RetoInicial.HolaMundo.Entity.Idioma;
-import RetoInicial.HolaMundo.service.HolaMundoService;
+import RetoInicial.HolaMundo.Idioma.Idioma;
+import RetoInicial.HolaMundo.service.IdiomaService;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
 @RequestMapping("/idiomas")
-public class HolaMundoController {
+public class IdiomaController {
 
     @Autowired
-    private HolaMundoService holaMundoService;
+    private IdiomaService holaMundoService;
 
     @GetMapping
     public List<Idioma> obtenerIdiomas() {

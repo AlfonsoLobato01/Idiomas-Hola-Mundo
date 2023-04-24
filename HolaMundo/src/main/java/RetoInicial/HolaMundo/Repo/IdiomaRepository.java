@@ -3,12 +3,12 @@ package RetoInicial.HolaMundo.Repo;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import RetoInicial.HolaMundo.Entity.Idioma;
+import RetoInicial.HolaMundo.Idioma.Idioma;
 
 
-public interface IdiomaRepository extends CrudRepository<Idioma, Long> {
+public interface IdiomaRepository{
 
     List<Idioma> findAll();
 

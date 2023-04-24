@@ -4,10 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HolaMundoApplication {
+public class IdiomaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HolaMundoApplication.class, args);
+		SpringApplication.run(IdiomaApplication.class, args);
+		
 	}
 
 }
