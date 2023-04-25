@@ -1,4 +1,4 @@
-INSERT INTO IDIOMA (CODIGO, NOMBRE, SALUDO) VALUES ('ES', 'ESPAÑOL', 'HOLA MUNDO');
-INSERT INTO IDIOMA (CODIGO, NOMBRE, SALUDO) VALUES ('EN','INGLES','HELLO WORLD');
-INSERT INTO IDIOMA (CODIGO, NOMBRE, SALUDO) VALUES ('FR','FRANCES','BONJOUR MONDE');
-INSERT INTO IDIOMA (CODIGO, NOMBRE, SALUDO) VALUES ('IT','ITALIANO','CIAO MONDE');
+insert into idioma (codigo, nombre, saludo) values ('es', 'español', 'hola mundo');
+insert into idioma (codigo, nombre, saludo) values ('en','ingles','hello world');
+insert into idioma (codigo, nombre, saludo) values ('fr','frances','bonjour monde');
+insert into idioma (codigo, nombre, saludo) values ('it','italiano','ciao monde');

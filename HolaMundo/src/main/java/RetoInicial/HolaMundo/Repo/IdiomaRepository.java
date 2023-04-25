@@ -12,7 +12,7 @@ public interface IdiomaRepository{
 
     Optional<Idioma> findById(Long id);
     
-    Optional<Idioma> findByCodigo(String CODIGO);
+    Optional<Idioma> findByCodigo(String codigo);
 
     <S extends Idioma> S save(S idioma);
     

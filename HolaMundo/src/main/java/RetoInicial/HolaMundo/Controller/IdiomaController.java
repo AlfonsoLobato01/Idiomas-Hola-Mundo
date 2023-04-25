@@ -32,8 +32,8 @@ public class IdiomaController {
     }
 
     @GetMapping("/codigo/{codigo}")
-    public Idioma obtenerIdiomaPorCodigo(@PathVariable String CODIGO) {
-        return idiomaService.obtenerIdiomaPorCodigo(CODIGO);
+    public Idioma obtenerIdiomaPorCodigo(@PathVariable String codigo) {
+        return idiomaService.obtenerIdiomaPorCodigo(codigo);
     }
 
     @PostMapping

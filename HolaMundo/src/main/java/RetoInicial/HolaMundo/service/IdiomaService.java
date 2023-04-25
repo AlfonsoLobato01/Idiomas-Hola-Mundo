@@ -41,12 +41,12 @@ public class IdiomaService {
         }
     }
 
-    public Idioma obtenerIdiomaPorCodigo(String CODIGO) {
-        Optional<Idioma> optionalIdioma = idiomaRepository.findByCodigo(CODIGO);
+    public Idioma obtenerIdiomaPorCodigo(String codigo) {
+        Optional<Idioma> optionalIdioma = idiomaRepository.findByCodigo(codigo);
         if (optionalIdioma.isPresent()) {
             return optionalIdioma.get();
         } else {
-            throw new IdiomaNotFoundException("Idioma no encontrado con el código: " + CODIGO);
+            throw new IdiomaNotFoundException("Idioma no encontrado con el código: " + codigo);
         }
     }
 

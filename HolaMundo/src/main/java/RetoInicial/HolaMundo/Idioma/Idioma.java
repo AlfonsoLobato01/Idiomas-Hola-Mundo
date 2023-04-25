@@ -17,20 +17,20 @@ public class Idioma {
     private Long id;
     
     @Column
-    private String NOMBRE;
+    private String nombre;
     
     @Column
-    private String CODIGO;
+    private String codigo;
     
     @Column
-    private String SALUDO;
+    private String saludo;
     
     public Idioma() {}
     
-    public Idioma(String NOMBRE, String CODIGO, String SALUDO) {
-        this.NOMBRE = NOMBRE;
-        this.CODIGO = CODIGO;
-        this.SALUDO = SALUDO;
+    public Idioma(String nombre, String codigo, String saludo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.saludo = saludo;
     }
     
     public Long getId() {
@@ -42,27 +42,27 @@ public class Idioma {
     }
     
     public String getNombre() {
-        return NOMBRE;
+        return nombre;
     }
     
-    public void setNombre(String NOMBRE) {
-        this.NOMBRE = NOMBRE;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     public String getCodigo() {
-        return CODIGO;
+        return codigo;
     }
     
-    public void setCodigo(String CODIGO) {
-        this.CODIGO = CODIGO;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
     
     public String getSaludo() {
-        return SALUDO;
+        return saludo;
     }
     
-    public void setSaludo(String SALUDO) {
-        this.SALUDO = SALUDO;
+    public void setSaludo(String saludo) {
+        this.saludo = saludo;
     }
 
 
