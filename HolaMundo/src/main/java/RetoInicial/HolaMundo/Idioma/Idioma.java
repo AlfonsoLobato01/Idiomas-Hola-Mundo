@@ -1,30 +1,36 @@
 package RetoInicial.HolaMundo.Idioma;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "Idioma")
 public class Idioma {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    private String nombre;
+    @Column
+    private String NOMBRE;
     
-    private String codigo;
+    @Column
+    private String CODIGO;
     
-    private String saludo;
+    @Column
+    private String SALUDO;
     
     public Idioma() {}
     
-    public Idioma(String nombre, String codigo, String saludo) {
-        this.nombre = nombre;
-        this.codigo = codigo;
-        this.saludo = saludo;
+    public Idioma(String NOMBRE, String CODIGO, String SALUDO) {
+        this.NOMBRE = NOMBRE;
+        this.CODIGO = CODIGO;
+        this.SALUDO = SALUDO;
     }
     
     public Long getId() {
@@ -36,27 +42,27 @@ public class Idioma {
     }
     
     public String getNombre() {
-        return nombre;
+        return NOMBRE;
     }
     
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String NOMBRE) {
+        this.NOMBRE = NOMBRE;
     }
     
     public String getCodigo() {
-        return codigo;
+        return CODIGO;
     }
     
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCodigo(String CODIGO) {
+        this.CODIGO = CODIGO;
     }
     
     public String getSaludo() {
-        return saludo;
+        return SALUDO;
     }
     
-    public void setSaludo(String saludo) {
-        this.saludo = saludo;
+    public void setSaludo(String SALUDO) {
+        this.SALUDO = SALUDO;
     }
 
 

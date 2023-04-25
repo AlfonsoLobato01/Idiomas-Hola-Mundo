@@ -19,35 +19,35 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 public class IdiomaController {
 
     @Autowired
-    private IdiomaService holaMundoService;
+    private IdiomaService idiomaService;
 
     @GetMapping
     public List<Idioma> obtenerIdiomas() {
-        return holaMundoService.obtenerIdiomas();
+        return idiomaService.obtenerIdiomas();
     }
 
     @GetMapping("/{id}")
     public Idioma obtenerIdiomaPorId(@PathVariable Long id) {
-        return holaMundoService.obtenerIdiomaPorId(id);
+        return idiomaService.obtenerIdiomaPorId(id);
     }
 
     @GetMapping("/codigo/{codigo}")
-    public Idioma obtenerIdiomaPorCodigo(@PathVariable String codigo) {
-        return holaMundoService.obtenerIdiomaPorCodigo(codigo);
+    public Idioma obtenerIdiomaPorCodigo(@PathVariable String CODIGO) {
+        return idiomaService.obtenerIdiomaPorCodigo(CODIGO);
     }
 
     @PostMapping
     public Idioma crearIdioma(@RequestBody Idioma idioma) {
-        return holaMundoService.crearIdioma(idioma);
+        return idiomaService.crearIdioma(idioma);
     }
 
     @PutMapping("/{id}")
     public Idioma actualizarIdioma(@PathVariable Long id, @RequestBody Idioma idioma) {
-        return holaMundoService.actualizarIdioma(id, idioma);
+        return idiomaService.actualizarIdioma(id, idioma);
     }
 
     @DeleteMapping("/{id}")
     public void borrarIdioma(@PathVariable Long id) {
-        holaMundoService.borrarIdioma(id);
+    	idiomaService.borrarIdioma(id);
     }
 }
