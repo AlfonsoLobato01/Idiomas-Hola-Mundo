@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ConfigServer/src/main/java"/>
+	<classpathentry kind="src" path="ConfigServer/src/test/java"/>
+	<classpathentry kind="src" path="HolaMundo/src/main/java"/>
+	<classpathentry kind="lib" path="ConfigServer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="HolaMundo/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="HolaMundo/target/HolaMundo-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="HolaMundo/target/classes"/>
+</classpath>
