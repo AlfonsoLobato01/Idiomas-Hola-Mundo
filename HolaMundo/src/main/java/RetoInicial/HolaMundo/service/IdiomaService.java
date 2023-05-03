@@ -39,7 +39,7 @@ public class IdiomaService {
     }
 
     public Idioma obtenerIdiomaPorCodigo(String codigo) {
-        Optional<Idioma> optionalIdioma = idiomaRepository.findByCodigo(codigo);
+        Optional<Idioma> optionalIdioma = idiomaRepository.findByCodigo(codigo.toLowerCase());
         if (optionalIdioma.isPresent()) {
             return optionalIdioma.get();
         } else {
