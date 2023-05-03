@@ -2,9 +2,7 @@ package RetoInicial.HolaMundo.RepoImpl;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.stereotype.Repository;
-
 import RetoInicial.HolaMundo.Idioma.Idioma;
 import RetoInicial.HolaMundo.Repo.IdiomaRepository;
 import jakarta.persistence.EntityManager;
