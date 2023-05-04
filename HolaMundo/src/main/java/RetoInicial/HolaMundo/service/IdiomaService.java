@@ -53,6 +53,7 @@ public class IdiomaService {
             Idioma idioma = optionalIdioma.get();
             idioma.setNombre(idiomaActualizado.getNombre());
             idioma.setCodigo(idiomaActualizado.getCodigo());
+            idioma.setSaludo(idiomaActualizado.getSaludo());
             return idiomaRepository.save(idioma);
         } else {
             throw new IdiomaNotFoundException("Idioma no encontrado con id: " + id);
